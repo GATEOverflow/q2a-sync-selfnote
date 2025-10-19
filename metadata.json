@@ -1,0 +1,13 @@
+{
+	"name": "Syncing Questions and Personal Note",
+	"description": "Provides question synchronization across related posts and allows users to add private notes on questions."
+	"version": "1.0",
+	"date": "2025-10-19",
+	"uri": "",
+	"update_uri": "",
+	"author": "Shaik Masthan",
+	"author_uri": "https://github.com/csemasthan/",
+	"license": "GPLv2",
+	"min_q2a": "1.5",
+	"load_order": "after_db_init"
+}
