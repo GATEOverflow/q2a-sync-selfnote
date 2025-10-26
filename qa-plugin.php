@@ -18,9 +18,7 @@ qa_register_plugin_layer('qa-synced-questions-layer.php', 'Question view page La
 qa_register_plugin_layer('qa-user-note-layer.php', 'Adding note to the question Layer');
 
 // creating page for showing all the self-notes
-qa_register_plugin_module('page', 'user-notes.php', 'user_notes_page', 'Page for listing all user Notes ');
-
-
+qa_register_plugin_module('page', 'qa-user-notes.php', 'user_notes_page', 'Page for listing all user Notes ');
 
 //Event process
 qa_register_plugin_module('event', 'qa-sync-merge.php', 'my_sync_merge_event', 'my_sync_merge_event');
