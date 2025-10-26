@@ -15,7 +15,7 @@ class user_notes_page
 
 		return [
 			[
-				'title' => qa_lang_sub('qa_sync_lang/All_notes'),
+				'title' => qa_lang_html('qa_sync_lang/All_notes'),
 				'request' => 'user-notes/' . $guest_handle . '/',
 				'nav' => 'M',
 			],
@@ -99,7 +99,7 @@ class user_notes_page
 			qa_opt('page_size_qs'),
 			$start,
 			$total_questions,
-			qa_lang_sub('qa_sync_lang/user_notes_page_title', $this->handle),
+			qa_lang_html('qa_sync_lang/user_notes_page_title', $this->handle),
 			$nonetitle,
 			$categories,
 			$categoryid ?? null,
