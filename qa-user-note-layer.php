@@ -64,11 +64,13 @@ class qa_html_theme_layer extends qa_html_theme_base
     ============================================ */
 	public function doctype()
 	{
+		$newTemplate = 'user-notes';
+		
 		if (
-			qa_request() === 'user-notes' ||
-			strpos(qa_request(), 'user-notes/') === 0
+			qa_request() === $newTemplate ||
+			strpos(qa_request(), $newTemplate . '/') === 0
 		) {
-			$this->template = 'user-notes';
+			$this->template = $newTemplate;
 		}
 		parent::doctype();
 	}
