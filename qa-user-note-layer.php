@@ -64,7 +64,10 @@ class qa_html_theme_layer extends qa_html_theme_base
     ============================================ */
 	public function doctype()
 	{
-		if (qa_request() === 'user-notes') {
+		if (
+			qa_request() === 'user-notes' ||
+			strpos(qa_request(), 'user-notes/') === 0
+		) {
 			$this->template = 'user-notes';
 		}
 		parent::doctype();
