@@ -60,6 +60,22 @@ class qa_html_theme_layer extends qa_html_theme_base
     }
 
     /* ============================================
+       Change template type
+    ============================================ */
+	public function doctype()
+	{
+		$newTemplate = 'user-notes';
+		
+		if (
+			qa_request() === $newTemplate ||
+			strpos(qa_request(), $newTemplate . '/') === 0
+		) {
+			$this->template = $newTemplate;
+		}
+		parent::doctype();
+	}
+
+    /* ============================================
        Inject note block after question content
     ============================================ */
     public function q_view($q_view)
