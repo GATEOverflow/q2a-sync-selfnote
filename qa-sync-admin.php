@@ -34,9 +34,9 @@ class qa_sync_admin {
 				CREATE TABLE `$table2` (
                     postid INT NOT NULL,
                     userid INT NOT NULL,
-                    note VARCHAR(20000) NOT NULL,
+                    note longtext NOT NULL,
                     PRIMARY KEY (postid, userid)
-                ) ENGINE=InnoDB DEFAULT CHARSET=utf8
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
 			";
 		}
 		return empty($queries) ? null : $queries;
